@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6f9f">
+  <title>Happy Birthday, Shamal ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">♡　♥　♡　♥　♡</div>
+  <header class="hero" id="home">
+    <p class="eyebrow">A little surprise made with love</p>
+    <h1>Happy Birthday,<br><span>Shamal</span> ❤️</h1>
+    <p class="subtitle">Today is all about you and the beautiful memories we share.</p>
+    <a class="primary" href="#memories">Let's see our memories ✨</a>
+    <div class="scroll">↓</div>
+  </header>
+
+  <main>
+    <section class="section note">
+      <p class="eyebrow">To my favourite person</p>
+      <h2>Every memory with you is special 💗</h2>
+      <p>Thank you for bringing so much happiness, colour and love into my life. I hope your birthday is as wonderful as you are.</p>
+      <p class="signature">With love, Rahul</p>
+    </section>
+
+    <section class="section" id="memories">
+      <p class="eyebrow">Our little photo album</p>
+      <h2>Let's see our memories 📸</h2>
+      <p class="section-intro">Replace these four sample pictures with your own photos. Keep the filenames the same.</p>
+      <div class="gallery">
+        <figure><img src="assets/photo1.svg" alt="Memory photo 1"><figcaption>Memory 1 💕</figcaption></figure>
+        <figure><img src="assets/photo2.svg" alt="Memory photo 2"><figcaption>Memory 2 🌸</figcaption></figure>
+        <figure><img src="assets/photo3.svg" alt="Memory photo 3"><figcaption>Memory 3 ✨</figcaption></figure>
+        <figure><img src="assets/photo4.svg" alt="Memory photo 4"><figcaption>Memory 4 ❤️</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <p class="eyebrow">How well do you remember us?</p>
+      <h2>Our Love Quiz 💌</h2>
+      <p class="section-intro">Six little questions about our story. Choose your answer!</p>
+      <div id="quiz-box" class="quiz-box">
+        <div class="quiz-top"><span id="progress">Question 1 of 6</span><span id="score">❤️</span></div>
+        <h3 id="question"></h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <button id="next" class="primary" hidden>Next question →</button>
+      </div>
+      <div id="result" class="result" hidden>
+        <h3>You are the sweetest! 💖</h3>
+        <p id="result-text"></p>
+        <button class="primary" onclick="restartQuiz()">Play again</button>
+      </div>
+    </section>
+
+    <section class="section final">
+      <div class="sparkle">✧</div>
+      <h2>One last thing, Shamal…</h2>
+      <p>No matter how many birthdays come and go, I will always be grateful for the day our story began.</p>
+      <p class="big-love">I love you, My-Sha! ❤️</p>
+      <p>Forever cheering for you,<br><strong>Rahul</strong></p>
+    </section>
+  </main>
+
+  <footer>Made with ❤️ for Shamal</footer>
+
+  <audio id="bg-music" loop>
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music">♫ Play music</button>
+  <script src="script.js"></script>
+</body>
+</html>
